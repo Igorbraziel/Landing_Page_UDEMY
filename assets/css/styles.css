@@ -624,6 +624,11 @@ label {
     .work-grid article:nth-child(3) h3::before{
         left: -1rem;
     }
+
+    .back-to-top {
+        width: 10rem;
+        height: 10rem;
+    }
 }
 
 @media (max-width: 40rem) {
