@@ -577,17 +577,17 @@ label {
 }
 
 .back-to-top {
-    display: block;
-    font-size: 7rem;
+    font-size: 6rem;
     position: fixed;
     width: 7rem;
     height: 7rem;
     bottom: 3rem;
     right: 3rem;
     border: 0.5rem solid var(--light-gray-color);
-    text-align: center;
-    line-height: 3.5rem;
-    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
     cursor: pointer;
     color: var(--secondary-color);
     background-color: var(--primary-color);
@@ -598,6 +598,58 @@ label {
     font-weight: 900;
     color: rgb(255, 0, 0);
     background-color: rgb(215, 197, 130);
+}
+
+@media (max-width: 50rem) {
+    .jobs-grid article:nth-child(1) h3::before{
+        left: 6rem;
+    }
+    
+    .jobs-grid article:nth-child(2) h3::before{
+        left: -3rem;
+    }
+    
+    .jobs-grid article:nth-child(3) h3::before{
+        left: -1rem;
+    }
+
+    .work-grid article:nth-child(1) h3::before{
+        left: -1rem;
+    }
+    
+    .work-grid article:nth-child(2) h3::before{
+        left: -1rem;
+    }
+    
+    .work-grid article:nth-child(3) h3::before{
+        left: -1rem;
+    }
+}
+
+@media (max-width: 40rem) {
+    .jobs-grid article:nth-child(1) h3::before{
+        left: -1rem;
+    }
+    
+    .jobs-grid article:nth-child(2) h3::before{
+        left: -3rem;
+    }
+    
+    .jobs-grid article:nth-child(3) h3::before{
+        left: -4rem;
+    }
+
+    .work-grid article:nth-child(1) h3::before{
+        left: -4rem;
+    }
+    
+    .work-grid article:nth-child(2) h3::before{
+        left: -3rem;
+    }
+    
+    .work-grid article:nth-child(3) h3::before{
+        left: -1rem;
+    }
 }
 
 
